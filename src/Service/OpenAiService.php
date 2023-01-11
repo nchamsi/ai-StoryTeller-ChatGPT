@@ -15,9 +15,10 @@ class OpenAiService
         $open_ai_key = $this->parameterBag->get('OPENAI_API_KEY');
         $open_ai = new OpenAi($open_ai_key);
 
+        /* Configuration api de chatGPT-3 d'OpenAI */
         $complete = $open_ai->completion([
             'model' => 'text-davinci-003',
-            'prompt' => 'Raconte moi une histoire pour enfants avec des rebondissements incroyables et avec les éléments suivants: ' .$story,
+            'prompt' => 'XXX Prompt spécifique à faire à l\IA de ChatGPT-3 d\'OPENAI ' .$story,
             'temperature' => 0,
             'max_tokens' => 3500,
             'frequency_penalty' => 0.5,
@@ -31,8 +32,6 @@ class OpenAiService
             return $json;
         }
         $json = 'Une erreur est survenue. Je n\'ai pas pu vous aider et ne peux créer cette histoire pour l\'instant.';
-        
-        //dd($json);
 
         return $json;
     }

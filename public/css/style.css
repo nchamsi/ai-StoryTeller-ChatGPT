@@ -4,29 +4,3 @@
     position: relative;
     background-position: 50%;
 }
-
-.lighter {
-    background-color: rgba(255, 255, 255, 0.5);
-    --form-element-placeholder-color: brown;
-    font-weight: 600;
-    color: black;
-}
-
-/* blockquote {
-    color: deepskyblue;
-    font-weight: 600;
-    background-color: black;
-    opacity: 0.8;
-} */
-
-cite {
-    color: white;
-    font-weight: 600;
-}
-
-.link {
-    margin-left: 10px;
-    color: hsl(205deg 20% 94%);
-    font-weight: 600;
-    background-color: #388e3c;
-}
