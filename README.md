@@ -12,13 +12,10 @@ Symfony webApp utilisant l'API d'OpenAi ChatGPT-3 pour générer des histoires p
 
   https://github.com/orhanerday/open-ai
 
-
-
-
-
 ## Demo
 
 http://ai-storyteller.herokuapp.com/
+Générateur d'une histoire classique pour enfants avec éléments au choix et/ou une histoire alternative par la suite (avec une leçon de vie à la fin).
 
 
 ## Environment Variables
