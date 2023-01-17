@@ -3,9 +3,6 @@
 
 Symfony webApp utilisant l'API d'OpenAi ChatGPT-3 pour générer des histoires pour enfants.
 
-
-
-
 ## API Reference
 
 #### Utilisation de l'API Open-AI PHP
@@ -43,7 +40,7 @@ Cette invitation de commande vous demandera de coller votre clé de manière inv
 ```
 php bin/console secrets:list --reveal 
 ```
-  
+  A noter: cette commande ne fonctionnera pas si vous n'avez pas ajouté votre propre API key d'OpenAI.
 ## Support
 
 Si questions, email jessicakuijer@me.com .
