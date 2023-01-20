@@ -4,3 +4,8 @@
     position: relative;
     background-position: 50%;
 }
+
+cite {
+    color: rgb(7, 61, 170);
+    font-weight: 600;
+}
