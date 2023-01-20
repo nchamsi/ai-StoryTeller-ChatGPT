@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-{# data-theme "light" ou "dark" pour le thème de l'interface de base #}
 <html data-theme="dark">
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}🧞‍♂️ Raconte-moi mon HISTOIRE! 👩‍🎤 🧌{% endblock %}</title>
-        {# rajout icone pour onglets de navigateur #}
+        {# <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>"> #}
         <link rel="icon" href="{{ asset('images/story.png') }}">
-        {# ajout CSS custom si necéssaire #}
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {# <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"> #}
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-        {# script HTMX #}
         <script src="https://unpkg.com/htmx.org@1.8.4" integrity="sha384-wg5Y/JwF7VxGk4zLsJEcAojRtlVp1FKKdGy1qN+OMtdq72WRvX/EdRdqg/LOhYeV" crossorigin="anonymous"></script>
-        {# TailwindCSS #}
         {% block stylesheets %}
         {{ encore_entry_link_tags('app') }}
         {% endblock %}
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body class="background">
         <main class="container my-20 px-6 mx-auto mb-40">
             {% block body %}{% endblock %}
         </main>
+    <script src="{{ asset('js/script.js') }}"></script>
     </body>
 </html>
