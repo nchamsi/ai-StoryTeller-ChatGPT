@@ -5,7 +5,7 @@ Symfony webApp utilisant l'API d'OpenAi ChatGPT-3 pour générer des histoires p
 
 ## API Reference
 
-#### Utilisation de l'API Open-AI PHP
+#### Utilisation de l'API OpenAI SDK PHP
 
   https://github.com/orhanerday/open-ai
 
@@ -15,6 +15,34 @@ http://ai-storyteller.herokuapp.com/
   
 Générateur d'une histoire classique pour enfants avec éléments au choix et/ou une histoire alternative par la suite (avec une leçon de vie à la fin).
 
+## Installation
+Pré-requis:  
+- PHP v.8 ou supérieur.
+- NodeJS v.14 ou supérieur (--lts)
+
+Installer les dépendances du projet à l'aide de composer.  
+```
+composer install
+
+```  
+Démarrage du projet avec le serveur symfony.  
+```
+symfony serve -d (ou symfony server:stop ou start, ici on lance le serveur en arrière-plan).
+```  
+ou  
+```
+php -S localhost -t public
+```  
+Compiler les assets et utilisation de TailwindCSS via Webpack Encore:  
+```
+npm run watch (ou run build pour déployer en production)
+```  
+
+Créer le fichier .env.local avec vos paramètres pour la variable d'environnement ci-dessous.  
+```
+cp .env .env.local
+
+```  
 
 ## Environment Variables
 
