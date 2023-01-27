@@ -1,3 +1,4 @@
+// gestion des checkboxes
 $("input[type='checkbox']").change(function() {
     if ($(this).is(":checked")) {
         $("input[type='checkbox']").not(this).prop("checked", false);
@@ -14,7 +15,7 @@ $("input[type='checkbox']").change(function() {
   rec.continuous = true;
   rec.interimResults = true;
 
-  // Fonction jquery pour controler l'écoute
+  // Fonction jquery pour controler l'écoute et fonctions JS
   
   $('#recButton').addClass("notRec");
   
@@ -25,13 +26,13 @@ $("input[type='checkbox']").change(function() {
           listen();
         }
         else{
-            $('#recButton').removeClass("Rec");
-            $('#recButton').addClass("notRec");
-            stopListen();
+          $('#recButton').removeClass("Rec");
+          $('#recButton').addClass("notRec");
+          stopListen();
 	}
 });	
 
-  // Fonction lancer l'écoute
+  // Fonction JS lancer l'écoute
   function listen() {
     rec.start();
     rec.onresult = function(e) {
@@ -44,12 +45,8 @@ $("input[type='checkbox']").change(function() {
     }
   }
 
-  // Fonction stopper l'écoute
+  // Fonction JS stopper l'écoute
   function stopListen() {
     rec.stop();
     alert("reconnaissance vocale désactivée")
   }
-
-
-  
-  
